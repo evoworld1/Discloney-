@@ -9,4 +9,6 @@ This project is based on original Disney+ VOD platform and all alike (Netflix, H
 
 #What new have I learned:
 
+Styled Components
 Node.js basics (for user authentication - registration and login)
+Redux toolkit
