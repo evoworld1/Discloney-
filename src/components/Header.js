@@ -7,6 +7,7 @@ const Header = (props) => {
       <Logo>
         <NavLogo src="/assets/images/nav-logo.png" alt="" />
       </Logo>
+      <NavMenu>menu</NavMenu>
     </Nav>
   );
 };
@@ -28,11 +29,28 @@ const Nav = styled.nav`
 
 const Logo = styled.a`
   padding: 0px;
-  width: 80px;
+  width: 200px;
   margin-top: 4px;
 `;
 
 const NavLogo = styled.img`
   width: 150px;
+`;
+
+const NavMenu = styled.div`
+  display: flex;
+  align-items: center;
+  flex-flow: nowrap row;
+  justify-content: flex-end;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  margin-right: auto;
+  text-transform: uppercase;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 export default Header;
